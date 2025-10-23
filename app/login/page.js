@@ -18,11 +18,11 @@ const Login = () => {
                 <p className='my-4 opacity-65 text-lg'>OR</p>
                 <div className='flex flex-col w-[60%] justify-center items-center gap-2'>
                     <button className='border border-[#d7d7d7] flex justify-center items-center w-full py-3 font-semibold text-md rounded-xl hover:bg-[#d7d7d7] cursor-pointer gap-2'>
-                        <img className='h-[14px]' src="/google.png" alt="google" />
+                        <Image className='h-[14px]' src="/google.png" alt="google" width={18} height={18} unoptimized />
                         Continue with Google
                     </button>
                     <button className='border border-[#d7d7d7] flex justify-center items-center w-full py-3 font-semibold text-md rounded-xl hover:bg-[#d7d7d7] cursor-pointer gap-2'>
-                        <img className='h-[14px]' src="/apple.png" alt="apple" />
+                        <Image className='h-[14px]' src="/apple.png" alt="apple" width={18} height={18} unoptimized />
                         Continue with Apple
                         </button>
                 </div>
@@ -32,12 +32,12 @@ const Login = () => {
                     <span className='text-purple-700 font-semibold text-md cursor-pointer'>Forgot username?</span>
                 </div>
                 <div className='flex gap-2'>
-                    <span className='opacity-65'>Don't have an account?</span>
+                    <span className='opacity-65'>Don&apos;t have an account?</span>
                     <span className='text-purple-700 cursor-pointer'>Sign up</span>
                 </div>
             </div>
             <div className="col2 h-[100vh] overflow-clip justify-center flex items-center">
-                <img className='w-[50vw]' src="/generate.png" alt='Image' />
+                <Image className='w-[50vw]' src="/generate.png" alt='Image' width={800} height={600} unoptimized />
             </div>
         </div>
     )

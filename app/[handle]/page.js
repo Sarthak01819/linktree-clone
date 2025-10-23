@@ -1,4 +1,5 @@
 import Link from "next/link"
+import Image from 'next/image'
 import clientPromise from "@/lib/mongodb"
 import { notFound } from "next/navigation"
 
@@ -35,7 +36,7 @@ export default async function Page({ params }) {
     }
     return <div className="flex min-h-screen justify-center items-start py-10">
         {item && <div className="photo flex flex-col items-center justify-center gap-2">
-            <img className="h-30 rounded-full aspect-square" src={item.pic} alt="pfp" />
+            <Image className="h-30 rounded-full aspect-square" src={item.pic} alt="pfp" width={120} height={120} unoptimized />
             <span className="font-bold text-black text-xl">@{handle}</span>
             <span className="description text-center px-4 mx-auto max-w-[60%]">{item.desc}</span>
             <div className="links">
